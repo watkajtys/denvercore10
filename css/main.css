@@ -326,5 +326,6 @@ h1, h2, h3 {
 
 #overlay > #overlay_content h2 {
   font-size: 36px;
+  letter-spacing: 1px;
 }
 #overlay > #overlay_content p { font-size: 18px; }

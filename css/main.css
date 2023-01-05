@@ -13,6 +13,8 @@
 
     */
 
+
+
 html {
   color: #222;
   font-size: 1em;
@@ -27,6 +29,7 @@ html {
   font-style: normal;
 
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -278,6 +281,10 @@ img {
 
 h1, h2, h3 {
   font-family : bebas_neueregular, serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 

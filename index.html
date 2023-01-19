@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
@@ -25,46 +25,104 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
 
+<header class="header">
+  <img src="/img/colorwd.png" alt="logo" class="logo">
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 <div id="vidHero">
   <div class="heroTextWrapper">
+<!--    <img src="img/logo.png" alt="Watkajtys for District 10">-->
     <h1>Matt Watkajtys</h1>
-    <h4>for</h4>
-    <h2>Denver City Council Core District 10</h2>
-    <h3>Downtown is not an afterthought.</h3>
+    <h2>Denver City Council District 10</h2>
+    <h3>Supporting the City of Tomorrow: Sustainable, Livable and Inclusive for All</h3>
   </div>
-  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"><iframe src="https://customer-42xa4cmme0b2liw5.cloudflarestream.com/1ec04d924f28ff668e69a2d96a38628d/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-42xa4cmme0b2liw5.cloudflarestream.com%2F1ec04d924f28ff668e69a2d96a38628d%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; filter: brightness(.8)" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
-<!--  <img src="/img/denvernight.jpg" alt="Denver At Night">-->
+
+  <a id="scrollwrap" href="#overlay">
+    <div class="scroll-down"></div>
+    <p>scroll down</p>
+  </a>
+
+  <video-js id="bgvid" class="bg" preload="auto"  loop>
+    <!-- Replace the src URL with the HLS manifest URL for a given video
+  You can access this from the Cloudflare Stream dashboard or via the Stream API -->
+    <source
+      src="https://customer-42xa4cmme0b2liw5.cloudflarestream.com/1ec04d924f28ff668e69a2d96a38628d/manifest/video.m3u8"
+      type="application/x-mpegURL"
+    />
+  </video-js>
+<!--  <div style="position: relative; padding-top: 56.25%;"><iframe src="https://customer-42xa4cmme0b2liw5.cloudflarestream.com/47b9ae2741b32773e4b9b96ffc2503c0/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-42xa4cmme0b2liw5.cloudflarestream.com%2F47b9ae2741b32773e4b9b96ffc2503c0%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>-->
+<!--  <div stylesheet="position: absolute; "><iframe src="https://customer-42xa4cmme0b2liw5.cloudflarestream.com/1ec04d924f28ff668e69a2d96a38628d/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-42xa4cmme0b2liw5.cloudflarestream.com%2F1ec04d924f28ff668e69a2d96a38628d%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; filter: brightness(.8)" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>-->
+  <!--  <img src="/img/denvernight.jpg" alt="Denver At Night">-->
 </div>
 
 <div id="overlay">
 
-  <div id="overlay_content">
+  <div id="overlay_content ">
+    <div class="wrapper">
+      <div class="half">
 
-    <div>
-      <h2>Beautiful, safe, and thriving cities are built with love, determination, and innovation.</h2>
-      <p>Denver's Core District 10 is a thriving hub for innovation and entrepreneurship. It's a vibrant community of creators, change markers, innovators, artists, and dreamers.</p>
-      <p>District 10 is a new district which encompasses the entirety of the urban economic core that is Denver.</p>
+        <div>
+          <h2>A New Leader for a Changing City</h2>
+          <p> Denver Leadership must operate with the urgency of a startup, rather than the pace of government bureaucracy.</p>
+        </div>
+
+        <div>
+          <h2>Meet Matt</h2>
+          <p>Matt Watkajtys is a former technology executive. His entire career he worked with products that started as a vision.
+            <br>He has helped usher those visions to execution.</p>
+          <p>Matt made a decision to run for city council to fight for the urban core. This district has been ignored for far too long.</p>
+          <p>Matt has been a renter in the Golden Triangle for six years after leaving Battery Park City in New York City.</p>
+
+          <p>All was well until COVID.</p>
+        </div>
+
+        <div>
+          <p>There were pay decreases and interruptions, personal savings dwindled, and Matt found himself working at an Amazon Fulfillment Center.</p>
+          <p>The next year COVID took its toll and months were lost. He found himself on Emergency Rent Relief. The situation grew dire.</p>
+          <p>COVID changed the world, lives were upended, cities were stressed to the breaking point and yet there is a determination to overcome.</p>
+        </div>
+
+      </div>
+      <div class="half">
+        <h2>An open letter to District 10.</h2>
+        <p>The challenges of the past few years have presented us with an unprecedented opportunity to shape Denver's future in a post-pandemic world.</p>
+        <p>I entered this race because I was worried for our future. The future for our families, our renters, our small businesses, and our economic engine.</p>
+        <p>My life changed during covid. I became "housing insecure" for the first time in my life. Emergency Rent Relief saved me.</p>
+        <p>COVID wasn't kind to me. It wasn't kind to many of us.</p>
+        <p> We have all a favorite small businesses close, we know too many neighbors forced to move, and too many friends lost to the battles of mental illness and addiction.</p>
+        <p>We have fought against a changing climate and those battles have been difficult and at times, devastating. We have seen neighborhoods consumed by flames, homes washed away by floodwaters, and our citizens trapped by snow</p>
+        <p>Our challenges are not unique to Denver. As a region we have endured extreme heat and struggled to adapt to a new normal.</p>
+
+        <p> But we are not alone in this fight. We must come together, put aside our differences and work towards a common goal of protecting our shared home.</p>
+           <p> It's time for action and we all have a part to play. Together, we can build a Denver that is stronger, more equitable, and more resilient than ever before.</p>
+        <p>I hope to be a part of this effort to make Denver a better place for everyone</p>
+      </div>
     </div>
 
     <div>
-      <h2>A New Leader for a Changing City</h2>
-      <p>COVID-19 changed our world. It changed our cities. We have to react just as quickly.</p>
-      <p>Leadership in this post-pandemic era needs to be decisive and fast-acting. Denver doesn't have the luxury of operating at the speed of government, it needs to operate at the speed of a startup.</p>
-    </div>
+      <video-js id="breakervid" class="breaker_full fluid" preload="auto"  loop>
+        <!-- Replace the src URL with the HLS manifest URL for a given video
+      You can access this from the Cloudflare Stream dashboard or via the Stream API -->
+        <source
+          src="https://customer-42xa4cmme0b2liw5.cloudflarestream.com/47b9ae2741b32773e4b9b96ffc2503c0/manifest/video.m3u8"
+          type="application/x-mpegURL"
+        />
+      </video-js>
 
-    <div>
-      <h2>Meet Matt</h2>
-      <p>Matt Watkajtys is a former technology executive. His entire career he worked with products that started as an idea.
-        <br> A vision in the head of a CEO.
-        <br>He helped usher those ideas to execution.</p>
-      <p>Matt made a decision to run for city council after coming to the unfortunate realization that <b>Downtown Denver & Adjacent</b> would, again, be forgotten amidst the single most important election cycle Denver has ever had.</p>
-      <p>Matt has been a renter in the Golden Triangle for six years after leaving Battery Park City in New York City for new adventures in a faraway land.</p>
-
-      <p>All was well until COVID.</p>
     </div>
 
     <div>
@@ -103,18 +161,27 @@
 </div>
 
 
-  <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+<script>
+
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+
+<script>
+  const vid = document.getElementById('bgvid');
+  const player = videojs(vid);
+  const vid2 = document.getElementById('breakervid')
+  const player2 = videojs(vid2)
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
